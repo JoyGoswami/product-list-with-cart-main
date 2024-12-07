@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --Rose-50: hsl(20, 50%, 98%);
+  --Rose-100: hsl(13, 31%, 94%);
+  --Rose-300: hsl(14, 25%, 72%);
+  --Rose-400: hsl(7, 20%, 60%);
+  --Rose-500: hsl(12, 20%, 44%);
+  --Rose-900: hsl(14, 65%, 9%);
+}
+
+/*          */
+/*  Global  */
+/*          */
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  background-color: var(--Rose-100);
+}
+
+.container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  border: 1px solid red;
+  padding: 0 20px;
+}
+
+img {
+  width: 100%;
+}
+/*          */
+/*  Global  */
+/*          */
+
+/*          */
+/*  items   */
+/*          */
+main {
+  padding: 4rem 0;
+}
+.main-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.item-container {
+  width: 70%;
+}
+.item-title {
+  margin-bottom: 1rem;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3.2));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+.card-image img {
+  border-radius: 10px;
+}
+.card-body {
+  margin-top: 3rem;
+  position: relative;
+}
+.item-category {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--Rose-500);
+}
+.item-name {
+  font-size: 1.2rem;
+  margin: 2px 0;
+  font-weight: 700;
+}
+.item-price {
+  color: var(--red);
+  font-weight: 800;
+}
+.add-to-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  width: 170px;
+  height: 45px;
+  background-color: white;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid var(--Rose-400);
+
+  position: absolute;
+  top: -77%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.add-to-cart-btn img {
+  width: 30px;
+  height: 30px;
+}
+.add-to-cart-btn span {
+  font-size: 1rem;
+}
+/*          */
+/*  items   */
+/*          */
+
+/*          */
+/*   cart   */
+/*          */
+.cart {
+  width: 27%;
+}
+.cart-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.cart-title {
+  color: var(--red);
+}
+.cart-card p {
+  text-align: center;
+  color: var(--Rose-500);
+}
+/*          */
+/*   cart   */
+/*          */
